@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ramda/0.25.0/ramda.min.js"></script>
+  </head>
+  <body>
+    <script>
+	  // The vars
+      const exam = R.reduce((acc, x) => {
+	  // Show values of vars
+        console.log(acc, x);
+        return R.compose(
+        R.flip(R.prepend)(acc),
+        //Sum of array
+        R.sum,
+        //1++ for each item
+        R.map(R.add(1)),
+        )([...acc, x]);
+      },
+      [0],
+      //The numbers
+      )([13, 28]);
+      console.log(exam);
+    </script>
+  </body>
+</html>

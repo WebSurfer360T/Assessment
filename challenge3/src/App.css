@@ -1,0 +1,39 @@
+html {
+  background-image: linear-gradient(to right top, #1c6c6f, #2b7b7e, #3a8b8d, #489c9c, #56acac);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+#fetch {
+  visibility: hidden;
+}
+
+body {
+  margin-left: 10px;
+}
+
+hr {
+  border: 0.2px solid black;
+  margin-top: 30px;
+}
+
+button {
+  border: 1px solid black;
+  padding: 5px;
+  background-color: #fff;
+  margin-top: 15px;
+}
+
+button:hover {
+  border: 1px solid black;
+  padding: 5px;
+  background-color:grey;
+  margin-top: 15px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid black;
+  margin-top: 25px;
+}
